@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<!-- saved from url=(0112)https://www.campusmvp.es/recursos/post/Que-diferencias-hay-entre-display-block-inline-e-inline-block-en-CSS.aspx -->
+<html lang="es" itemscope="" itemtype="//schema.org/Article"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="contents" title="Archive" href="https://www.campusmvp.es/recursos/archive.aspx">
+<link rel="start" title="campusMVP.es" href="https://www.campusmvp.es/recursos/">
+<link type="application/rsd+xml" rel="edituri" title="RSD" href="https://www.campusmvp.es/recursos/rsd.axd">
+<link type="application/rdf+xml" rel="meta" title="SIOC" href="https://www.campusmvp.es/recursos/sioc.axd">
+<link type="application/apml+xml" rel="meta" title="APML" href="https://www.campusmvp.es/recursos/apml.axd">
+<link type="application/rdf+xml" rel="meta" title="FOAF" href="https://www.campusmvp.es/recursos/foaf.axd">
+<link type="application/rss+xml" rel="alternate" title="campusMVP.es (RSS)" href="https://www.campusmvp.es/recursos/syndication.axd">
+<link type="application/atom+xml" rel="alternate" title="campusMVP.es (ATOM)" href="https://www.campusmvp.es/recursos/syndication.axd?format=atom">
+<link type="application/opensearchdescription+xml" rel="search" title="campusMVP.es" href="https://www.campusmvp.es/recursos/opensearch.axd">
+<link href="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/Global.css" rel="stylesheet" type="text/css"><link href="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/css" rel="stylesheet" type="text/css"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><link href="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/core.css" rel="stylesheet"><link href="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/styles.min.css" rel="stylesheet"><link href="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/recursosstyles.css" rel="stylesheet"><link href="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/responsive.css" rel="stylesheet" media="all"><link href="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/destacados.css" rel="stylesheet" media="all"><link href="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/botonesRRSS.css" rel="stylesheet" media="all"><link href="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/jquery.pan.css" rel="stylesheet" media="all"><link href="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/print-blog.css" type="text/css" media="print" rel="stylesheet">
+<!--[if lt IE 9]>
+	<script type="text/javascript" src="https://www.campusmvp.es/recursos/Custom/Themes//campusMVP/include/html5.js"></script>
+	<![endif]-->
+<link rel="apple-touch-icon" sizes="57x57" href="https://www.campusmvp.es/img/favicons/apple-touch-icon-57x57.png?v=OmmnjwQerQ"><link rel="apple-touch-icon" sizes="60x60" href="https://www.campusmvp.es/img/favicons/apple-touch-icon-60x60.png?v=OmmnjwQerQ"><link rel="apple-touch-icon" sizes="72x72" href="https://www.campusmvp.es/img/favicons/apple-touch-icon-72x72.png?v=OmmnjwQerQ"><link rel="apple-touch-icon" sizes="76x76" href="https://www.campusmvp.es/img/favicons/apple-touch-icon-76x76.png?v=OmmnjwQerQ"><link rel="apple-touch-icon" sizes="114x114" href="https://www.campusmvp.es/img/favicons/apple-touch-icon-114x114.png?v=OmmnjwQerQ"><link rel="apple-touch-icon" sizes="120x120" href="https://www.campusmvp.es/img/favicons/apple-touch-icon-120x120.png?v=OmmnjwQerQ"><link rel="apple-touch-icon" sizes="144x144" href="https://www.campusmvp.es/img/favicons/apple-touch-icon-144x144.png?v=OmmnjwQerQ"><link rel="apple-touch-icon" sizes="152x152" href="https://www.campusmvp.es/img/favicons/apple-touch-icon-152x152.png?v=OmmnjwQerQ"><link rel="apple-touch-icon" sizes="180x180" href="https://www.campusmvp.es/img/favicons/apple-touch-icon-180x180.png?v=OmmnjwQerQ">
+<script type="text/javascript" src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/es.res.axd"></script>
+<script type="text/javascript" src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/01-jquery-3.6.1.min.js.descarga"></script>
+<script type="text/javascript" src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/02-jquery.cookie.js.descarga"></script>
+<script type="text/javascript" src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/04-jquery-jtemplates.js.descarga"></script>
+<script type="text/javascript" src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/05-json2.min.js.descarga"></script>
+<script type="text/javascript" src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/blog.js.descarga"></script><link rel="icon" type="image/png" href="https://www.campusmvp.es/img/favicons/favicon-32x32.png?v=OmmnjwQerQ" sizes="32x32"><link rel="icon" type="image/png" href="https://www.campusmvp.es/img/favicons/android-chrome-192x192.png?v=OmmnjwQerQ" sizes="192x192"><link rel="icon" type="image/png" href="https://www.campusmvp.es/img/favicons/favicon-96x96.png?v=OmmnjwQerQ" sizes="96x96"><link rel="icon" type="image/png" href="https://www.campusmvp.es/img/favicons/favicon-16x16.png?v=OmmnjwQerQ" sizes="16x16"><link rel="manifest" href="https://www.campusmvp.es/img/favicons/manifest.json?v=OmmnjwQerQ"><link rel="mask-icon" href="https://www.campusmvp.es/img/favicons/safari-pinned-tab.svg?v=OmmnjwQerQ" color="#5bbad5"><link rel="shortcut icon" href="https://www.campusmvp.es/img/favicons/favicon.ico?v=OmmnjwQerQ"><meta name="msapplication-TileColor" content="#042038"><meta name="msapplication-TileImage" content="/img/favicons/mstile-144x144.png?v=OmmnjwQerQ"><meta name="msapplication-config" content="/img/favicons/browserconfig.xml?v=OmmnjwQerQ"><meta name="theme-color" content="#042038">
+<meta name="keywords" content="HTML,CSS,Evergreen,Extras,Video">
+<meta name="author" content="José Manuel Alarcón">
+<link rel="last" title="WebAsssembly: acelerando y creando nuevas posibilidades en desarrollo web" href="https://www.campusmvp.es/recursos/post/webasssembly-acelerando-y-creando-nuevas-posibilidades-en-desarrollo-web.aspx">
+<link rel="first" title="Modern.IE: la herramienta para testeo web de Microsoft " href="https://www.campusmvp.es/recursos/post/Microsoft-lanza-una-nueva-herramienta-de-testeo-Web.aspx">
+<link type="application/rss+xml" rel="alternate" title="¿Qué diferencias hay entre display:block, inline e inline-block en CSS? (RSS)" href="https://www.campusmvp.es/recursos/post/feed/Que-diferencias-hay-entre-display-block-inline-e-inline-block-en-CSS.aspx?format=ATOM">
+<link type="application/rss+xml" rel="alternate" title="¿Qué diferencias hay entre display:block, inline e inline-block en CSS? (ATOM)" href="https://www.campusmvp.es/recursos/post/feed/Que-diferencias-hay-entre-display-block-inline-e-inline-block-en-CSS.aspx?format=ATOM">
+<meta name="description" content="Una duda típica a la hora de trabajar con HTML y CSS es tener claras las diferencias que existen entre elementos de bloque y elementos en línea, así que vamos a intentar arrojar un poco de luz sobre este tema."><meta itemprop="name" content="¿Qué diferencias hay entre display:block, inline e inline-block en CSS? - campusMVP.es"><meta itemprop="description" content="Una duda típica a la hora de trabajar con HTML y CSS es tener claras las diferencias que existen entre elementos de bloque y elementos en línea, así que vamos a intentar arrojar un poco de luz sobre este tema."><meta itemprop="url" content="https://www.campusmvp.es/recursos/post/que-diferencias-hay-entre-display-block-inline-e-inline-block-en-css.aspx"><meta itemprop="author" content="JMAlarcon"><meta property="image" content="https://www.campusmvp.es/recursos/image.axd?picture=CSS-Display.png"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="¿Qué diferencias hay entre display:block, inline e inline-block en CSS? - campusMVP.es"><meta name="twitter:site" content="@campusmvp"><meta name="twitter:creator" content="@campusmvp"><meta name="twitter:url" content="https://www.campusmvp.es/recursos/post/que-diferencias-hay-entre-display-block-inline-e-inline-block-en-css.aspx"><meta name="twitter:description" content="Una duda típica a la hora de trabajar con HTML y CSS es tener claras las diferencias que existen entre elementos de bloque y elementos en línea, así que vamos a intentar arrojar un poco de luz sobre este tema."><meta name="twitter:image" content="https://www.campusmvp.es/recursos/image.axd?picture=CSS-Display.png"><meta property="og:title" content="¿Qué diferencias hay entre display:block, inline e inline-block en CSS? - campusMVP.es"><meta property="og:type" content="website"><meta property="og:site_name" content="campusMVP.es"><meta property="og:url" content="https://www.campusmvp.es/recursos/post/que-diferencias-hay-entre-display-block-inline-e-inline-block-en-css.aspx"><meta property="og:description" content="Una duda típica a la hora de trabajar con HTML y CSS es tener claras las diferencias que existen entre elementos de bloque y elementos en línea, así que vamos a intentar arrojar un poco de luz sobre este tema."><meta property="article:author" content="JMAlarcon"><meta name="og:image" content="https://www.campusmvp.es/recursos/image.axd?picture=CSS-Display.png"><title>
+	¿Qué diferencias hay entre display:block, inline e inline-block en CSS? | campusMVP.es
+</title></head>
+<body class="ltr">
+<a class="skip-link" href="https://www.campusmvp.es/recursos/post/Que-diferencias-hay-entre-display-block-inline-e-inline-block-en-CSS.aspx#content">Saltar al contenido</a>
+<form method="post" action="https://www.campusmvp.es/recursos/post/Que-diferencias-hay-entre-display-block-inline-e-inline-block-en-CSS.aspx?id=6e85cc55-84ac-4b33-99d9-e7e895806229" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="LjKkEjz7Ga6d/2zesLLNHOZL4Uk/oMh/wahqNdhSw8zGglUWV7P/0oiyqRtbFd4GKGAg9VR5YWUr3JIsiYyW/jBze5PfUMbvFkHT9k1zG7L2lAbBcAopY9laWIpTq8BYJptEWIJoRmo3+L3U49jTDLSajvgetDn37xldyCNXnV7MC/k14fv3u5lapFnXfyTnGhEYC2F1KM1nI11xEawZSPysXEEjPqaujbb3JDQh2TqEOmKw0ZD4Jrf7NwyPd6vkfzeae4bn7CFYL5tzILS5gbNSSU+uXiPRPzhIhfER3hByzvaBfPtdMItqOveFUb/otx3iCw==">
+</div>
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+<script src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/res-540627514.js.axd" type="text/javascript"></script>
+<script src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/AdEngine.js.descarga"></script>
+<div id="header-wrapper">
+<a class="display" id="nav-toggle" href="https://www.campusmvp.es/recursos/post/Que-diferencias-hay-entre-display-block-inline-e-inline-block-en-CSS.aspx#" title="menú navegaci?n principal"> <img class="nav-toggle-icon" src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/nav-toggle-icon.png" alt="Menú de navegación"><span>Menú</span></a>
+
+<div class="Header">
+<div id="inner-header" class="col-full">
+
+<div id="Div2" class="header-search">
+<div id="buscador" class="widget-container widget_search">
+<iframe id="buscador-google" height="40px" frameborder="0" onload="this.style.visibility=&#39;visible&#39;;" style="visibility: visible;" src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/search-iframe.html" scrolling="no">   </iframe>
+</div>
+
+</div>
+
+<div id="logo"><a title="logotipo de campusmvp.es" href="https://www.campusmvp.es/">CampusMVP.es</a></div>
+<span id="tagline">Los mejores <a title="Catálogo de cursos online para programadores en español" href="https://www.campusmvp.es/catalogo/">cursos online</a>
+para programadores</span>
+
+<div id="main-nav" class="col-full" role="navigation">
+<div class="menus">
+<span id="close-area"><a id="logoMenu" title="inicio" href="https://www.campusmvp.es/"><span>Inicio</span></a><a id="close-menu" class="close" title="cerrar" href="https://www.campusmvp.es/recursos/post/Que-diferencias-hay-entre-display-block-inline-e-inline-block-en-CSS.aspx#">X</a></span>
+
+<ul id="navigation">
+<li class="menu-item home-boton"><a class="Navegation1 iconoInicio" href="https://www.campusmvp.es/" title="Inicio CampusMVP"><img class="Ico-full-size-screen" alt="Inicio" src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/home-ico.png"> <img class="Ico-responisve" alt="Inicio" src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/home-ico-responsive.png"></a></li>
+<li class="menu-item "><span><a class="Navegation1" href="https://www.campusmvp.es/catalogo/" title="Catálogo de cursos online para programadores en español">Catálogo</a></span></li>
+<li class="menu-item"><span><a class="Navegation1" href="https://www.campusmvp.es/conocenos">Conócenos</a></span></li>
+<li class="menu-item"><span><a class="Navegation1" href="https://www.campusmvp.es/opiniones-campusmvp" title="Opiniones de alumnos">Opiniones</a></span> </li>
+<li class="menu-item"><span><a class="Navegation1" href="https://www.campusmvp.es/empresas">Empresas</a></span> </li>
+<li class="menu-item selected"><span><a class="NavegationSelect1" href="https://www.campusmvp.es/recursos/">Recursos</a></span> </li>
+<li class="menu-item"><span><a class="Navegation1" href="https://www.campusmvp.es/contacto/">Contacto</a></span> </li>
+</ul>
+
+<span class="to-display-responsive">
+<ul class="usuario">
+<li> <iframe id="iframe-user" scrolling="no" frameborder="0" src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/userstatus.html" height="40px" style="visibility: visible;" onload="this.style.visibility=&#39;visible&#39;;"></iframe></li>
+</ul>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="lista-categorias">
+<div id="categoriasToggle">
+<span id="backToggle" class="responsiveCategorias">Categorías</span>
+</div>
+<ul id="categorylist"><li><a href="https://www.campusmvp.es/recursos/category/Acceso-a-Datos.aspx" title="Categoría: Acceso a Datos">Acceso a Datos</a></li><li><a href="https://www.campusmvp.es/recursos/category/AI-ML-y-analisis-de-datos.aspx" title="Categoría: AI, ML y análisis de datos">AI, ML y análisis de datos</a></li><li><a href="https://www.campusmvp.es/recursos/category/Desarrollo-movil.aspx" title="Categoría: Desarrollo móvil">Desarrollo móvil</a></li><li><a href="https://www.campusmvp.es/recursos/category/Desarrollo-Web.aspx" title="Categoría: Desarrollo Web">Desarrollo Web</a></li><li><a href="https://www.campusmvp.es/recursos/category/DevFacts.aspx" title="Categoría: DevFacts">DevFacts</a></li><li><a href="https://www.campusmvp.es/recursos/category/General.aspx" title="Categoría: General">General</a></li><li><a href="https://www.campusmvp.es/recursos/category/Herramientas.aspx" title="Categoría: Herramientas">Herramientas</a></li><li><a href="https://www.campusmvp.es/recursos/category/Lenguajes-y-plataformas.aspx" title="Categoría: Lenguajes y plataformas">Lenguajes y plataformas</a></li><li><a href="https://www.campusmvp.es/recursos/category/Trucos.aspx" title="Categoría: Trucos">Trucos</a></li></ul>
+</div>
+<div class="Page-Wrapper Container">
+<div id="logo-print">
+<img src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/logo-campusmvp-print.jpg">
+<p>La mejor forma de Aprender Programación online y en español <span>www.campusmvp.es</span></p>
+</div>
+<section class="Content-Wrapper" id="content">
+
+
+<div id="postnavigation">
+<a href="https://www.campusmvp.es/recursos/post/4-Consejos-para-programadores-mayores-que-buscan-trabajo.aspx" class="nav-next">4 Consejos para programadores mayores (experimentados) que buscan trabajo</a> |
+<a href="https://www.campusmvp.es/recursos/post/Creacion-de-maquetas-de-dispositivos-en-HTML5-de-manera-muy-sencilla.aspx" class="nav-prev">Creación de maquetas de dispositivos en HTML5 de manera muy sencilla</a>
+</div>
+<article class="post" id="post0">
+
+<span style="display:none;">?id=6e85cc55-84ac-4b33-99d9-e7e895806229</span>
+<h1 class="PostTitle">
+¿Qué diferencias hay entre display:block, inline e inline-block en CSS?
+</h1>
+
+
+<div class="PostInfo Clear">
+Por <span class="AuthorName"><a href="https://www.campusmvp.es/recursos/author/JMAlarcon.aspx">José Manuel Alarcón</a></span>
+</div>
+
+
+<div class="bloquepubli" id="publi" style="display: block;"><a class="AdLink AdLink--txt" href="https://www.campusmvp.es/catalogo/Product-HTML5-y-CSS3-a-fondo-para-desarrolladores_185.aspx" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Anuncios Contenido Recursos&#39;, &#39;/catalogo/Product-HTML5-y-CSS3-a-fondo-para-desarrolladores_185.aspx&#39;, &#39;HTML5 txt 03 en publi&#39;]);">Aprende a dominar en serio HTML y CSS <strong>desde el punto de vista de un desarrollador</strong>. ¡Empieza ahora!</a></div>
+
+
+<div class="PostBody text">
+<p><img style="background-image: none; display: none; border-width: 0px;" title="CSS-Display" src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/image.axd" alt="CSS-Display" width="750" height="300" border="0">Una duda típica a la hora <a href="https://www.campusmvp.es/catalogo/Product-HTML5-y-CSS3-a-fondo-para-desarrolladores_185.aspx" target="_blank">de trabajar con HTML y CSS</a> es tener claras las diferencias que existen entre elementos de bloque y elementos en línea, así que vamos a intentar arrojar un poco de luz sobre este tema.</p>
+<h2>Elementos en línea</h2>
+<p>Para explicarlo de manera sencilla, y simplificando, ciertas etiquetas HTML <strong>no afectan en absoluto al flujo de los demás elementos</strong>, limitándose a marcar ciertos fragmentos con una determinada semántica y <strong>dejando que el texto y otros elementos contiguos sigan fluyendo</strong> en la misma línea, colocándose a ambos lados de dicho elemento.</p>
+<p>Ejemplos de estas etiquetas son: <span style="font-family: courier new;">&lt;a&gt;</span>, <span style="font-family: courier new;">&lt;em&gt;</span>,<span style="font-family: courier new;">&lt;del&gt;</span>... y quizá la más útil de todas: la etiqueta <strong><span style="font-family: courier new;">&lt;span&gt;</span></strong>, que se usa para envolver elementos en-línea para darles estilo sin cambiar su comportamiento. A estos elementos HTML se les llama <strong>elementos de línea</strong> o, incluso más a menudo, por su denominación en inglés: <strong>elementos "inline"</strong>.</p>
+<p>Por ejemplo, si tenemos el siguiente estilo CSS:</p>
+<pre class="brush:css;">.caja {
+	background-color: yellow;
+	border: 1px solid black;
+	width: 100px;
+	height: 100px;
+	padding: 5px;
+	margin: 50px 10px;
+}</pre>
+<p>Y un código HTML tan sencillo como este:</p>
+<pre class="brush:html;">&lt;p&gt;Lorem ipsum dolor...&lt;/p&gt;
+&lt;span class="caja"&gt;CAJA 1&lt;/span&gt;
+&lt;span class="caja"&gt;CAJA 2&lt;/span&gt;
+&lt;span class="caja"&gt;CAJA 3&lt;/span&gt;
+&lt;p&gt;Lorem ipsum dolor...&lt;/p&gt;</pre>
+<p>Lo que obtenemos en el navegador con este código es esta representación:</p>
+<p><img style="background-image: none; float: none; margin-left: auto; display: block; margin-right: auto; border-width: 0px;" title="bloques-block" src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/image(1).axd" alt="bloques-block" width="316" height="126" border="0"></p>
+<p>Como vemos las cajas tienen un <strong>estilo in-line</strong> porque son <em>spans</em>, se alinean unas a continuación de otras, pero <strong>no se respetan los anchos, los altos ni los márgenes verticales de los elementos</strong>.</p>
+<h2>Elementos de bloque</h2>
+<p>Por el contrario, <strong>ciertas etiquetas se renderizan en el navegador en líneas independientes</strong>, no mezcladas con el resto del texto.&nbsp; Ejemplos de estas etiquetas son los encabezados (<span style="font-family: courier new;">&lt;h1&gt;</span> hasta <span style="font-family: courier new;">&lt;h6&gt;</span>), las citas en bloque (<span style="font-family: courier new;">&lt;blockquote&gt;</span>), por supuesto los párrafos (<span style="font-family: courier new;">&lt;p&gt;</span>), y quizá la más conocida de todas que es la etiqueta <strong><span style="font-family: courier new;">&lt;div&gt;</span></strong> usada normalmente para envolver a otros elementos. A estos elementos se les denomina <strong>elementos de bloque</strong>.</p>
+<p>Siguiendo con el mismo ejemplo anterior, si simplemente sustituimos los <span style="font-family: courier new;">&lt;span&gt;</span> por elementos <span style="font-family: courier new;">&lt;div&gt;</span>, ahora las cajas son elementos de bloque, y se renderizarán de la siguiente manera:</p>
+<p align="center"><img style="background-image: none; display: inline; border-width: 0px;" title="bloques-block" src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/image(2).axd" alt="bloques-block" width="231" height="590" border="0"></p>
+<p>Es decir, ahora los elementos no fluyen como si fueran texto, sino que por defecto se renderizan en líneas independientes. Además, <strong>los elementos de bloque respetan los anchos y altos y los márgenes verticales</strong>, tal y como se observa en la figura anterior (no se ha cambiado nada más que el tipo de etiqueta: los estilos CSS son exactamente los mismos).</p>
+<h2>Cambio de tipo de visualización y un tercer tipo intermedio</h2>
+<p>Bien, aparte de este comportamiento por defecto, es posible <strong>cambiar el modo en el que se visualiza/renderiza cualquier elemento HTML </strong>de una página usando la <strong>propiedad CSS</strong> llamada <strong>display</strong>.</p>
+<p>Esta propiedad puede tomar <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display" target="_blank">muchos valores diferentes</a>, pero <strong>los más comunes son estos tres</strong>:</p>
+<ul>
+<li><strong>block</strong>: hace que el comportamiento del elemento sea como un bloque.</li>
+<li><strong>inline</strong>: el elemento se renderizará en línea con otros elementos.</li>
+<li><strong>inline-block</strong>: el elemento tendrá un comportamiento mezcla entre los dos anteriores, que ahora voy a describir.</li>
+</ul>
+<p>Así por ejemplo, aunque tengamos una etiqueta span que se renderiza en línea por defecto, si le aplicamos la propiedad <span style="font-family: courier new;">display:block;</span> se renderizará como un bloque, es decir, sería exactamente igual que si hubiésemos puesto un <span style="font-family: courier new;">&lt;div&gt;</span>.</p>
+<p>El tercer valor de la lista anterior es muy interesante ya que permite obtener un comportamiento intermedio entre los otros dos. <strong>Los elementos inline-block fluyen con el texto y demás elementos</strong> como si fueran elementos en-línea <strong>y además respetan el ancho, el alto y los márgenes verticales</strong>. Son lo mejor de los dos mundos.</p>
+<p>Así, si por ejemplo redefinimos la etiqueta <span style="font-family: courier new;">&lt;span&gt;</span> de esta manera y volvemos a refrescar la página del principio, lo que veríamos por pantalla es esto:</p>
+<p align="center"><img style="background-image: none; display: inline; border-width: 0px;" title="bloques-inline-block" src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/image(3).axd" alt="bloques-inline-block" width="468" height="302" border="0"></p>
+<p>Fíjate en que ahora se respetan todas las propiedades (ancho, alto y margen vertical), pero los elementos siguen estando en la misma línea.</p>
+<h2>Cambio automático de modo</h2>
+<p>Una cuestión importante y que muchas veces se nos pasa por alto es que <strong>un elemento en línea puede cambiar de manera automática y pasar a ser un elemento de bloque</strong> en ciertas circunstancias, sin que nos demos cuenta. En concreto si lo flotamos con la propiedad CSS llamada <strong>float</strong>, aunque el elemento sea <em>inline</em> (incluso aunque lo indiquemos explícitamente con un <span style="font-family: courier new;">display:inline !important;</span>) el elemento adquirirá automáticamente el estilo de bloque para poder aplicar la flotación, que tiene preferencia. Esto es <a href="http://www.w3.org/TR/CSS21/visuren.html#dis-pos-flo" target="_blank"><strong>lo que indica el estándar</strong></a> específicamente.</p>
+<p>¡Espero que lo encuentres útil!</p>
+<p><img src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/image(4).axd" alt=""></p>
+<h2>Contenido Extra</h2>
+<p>Hemos grabado un completo vídeo mostrando todo lo explicado de manera visual, en un navegador con código real, de modo que lo puedas ver con mayor detalle. <strong><a href="https://www.youtube.com/watch?v=DU9kY8kOu4s" target="_blank">Puedes verlo aquí</a></strong>.</p>
+<p style="text-align: center;"></p><div style="position:relative;width:100%;height:0;padding-bottom:56.25%;"><iframe style="position:absolute;left:0;top:0;width:100%;height:100%;" src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/DU9kY8kOu4s.html" frameborder="0" allowfullscreen=""></iframe></div><p></p>
+<span class="PubDate">Fecha de publicación: <time datetime="2015-10-6" itemprop="dateCreated">6 de octubre de 2015</time></span>
+</div>
+
+
+<div class="bloquepubli" id="publi2" style="display: block;"><a class="AdLink AdLink--txt" href="https://www.campusmvp.es/catalogo/Product-Interfaces-web-responsive-con-HTML5,-Flexbox,-CSS-Grid-y-Bootstrap_212.aspx" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Anuncios Contenido Recursos&#39;, &#39;/catalogo/Product-Interfaces-web-responsive-con-HTML5,-Flexbox,-CSS-Grid-y-Bootstrap_212.aspx&#39;, &#39;ResponsiveWD txt 03 en publi2&#39;]);">🕸 ¿Necesitas aprender YA <strong> Maquetación Web <em>Responsive</em></strong>? Aprovecha nuestro curso 👍</a></div>
+
+
+<div class="Avatar-nombre-autor">
+<span class="authorInfo">
+<img width="80" class="photo" height="80" alt="José Manuel Alarcón" src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/a1054d03c22fb4933be169c47bb99513.jpeg">
+Fundador de <a href="https://www.campusmvp.es/">campusMVP</a>, es ingeniero industrial y especialista en consultoría de empresa. Ha escrito diversos libros, habiendo publicado hasta la fecha cientos de artículos sobre informática e ingeniería en publicaciones especializadas. Microsoft lo ha reconocido como MVP (Most Valuable Professional) en desarrollo web desde el año 2004 hasta la actualidad. Puedes seguirlo en Twitter en <a href="https://twitter.com/jm_alarcon" target="_blank">@jm_alarcon</a> o leer sus blog <a target="_blank" href="http://www.jasoft.org/blog/">técnico</a> o <a target="_blank" href="https://jmalarcon.es/">personal</a>.
+<span class="todos-los-articulos"><a href="https://www.campusmvp.es/recursos/author/JMAlarcon.aspx">Ver todos los posts de José Manuel Alarcón</a></span>
+</span>
+</div>
+
+
+<div class="PostCategories" title="Categorías">
+Archivado en: <a href="https://www.campusmvp.es/recursos/category/Desarrollo-Web.aspx">Desarrollo Web</a>
+</div>
+
+<div class="AdminLine">
+<div class="AdminLinks"></div>
+</div>
+
+<div class="CommentCount" title="Comentarios">
+<strong><a class="commentslink" rel="nofollow" href="https://www.campusmvp.es/recursos/post/Que-diferencias-hay-entre-display-block-inline-e-inline-block-en-CSS.aspx#commentlist"> 13 comentarios</a></strong>
+</div>
+
+
+<div class="cmvp-post-cta">
+<h3>¿Te ha gustado este post? <br>Pues espera a ver nuestro boletín...</h3>
+<div class="cmvp-post-cta__boletin">
+<p><a class="cmvp-post-cta__cta-boletin" href="https://www.campusmvp.es/boletin/" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;clic_boton&#39;, &#39;CTAs_finPost&#39;, &#39;CTA_finPost--boletin&#39;]);"><img src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/boton-destello-newsletter.gif" alt="Suscríbete a la newsletter"></a></p>
+</div>
+</div>
+
+
+<div id="compartir-redes-sociales">
+<p class="social-cta">¿Te ha gustado este artículo? ¡Compártelo!</p>
+<div id="Sharing" title="Compartir">
+<div id="ShareTwitter">
+<a class="resp-sharing-button__link" rel="nofollow" href="https://twitter.com/intent/tweet/?text=%c2%bfQu%c3%a9+diferencias+hay+entre+display%3ablock%2c+inline+e+inline-block+en+CSS%3f&amp;url=https://www.campusmvp.es/recursos/post/Que-diferencias-hay-entre-display-block-inline-e-inline-block-en-CSS.aspx" target="_blank" aria-label="Twitter">
+<div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--medium">
+<div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+<svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+<path d="M12,0C5.383,0,0,5.383,0,12s5.383,12,12,12s12-5.383,12-12S18.617,0,12,0z M17.262,9.385 c0.006,0.113,0.008,0.226,0.008,0.34c0,3.478-2.647,7.489-7.488,7.489c-1.486,0-2.87-0.437-4.035-1.184 c1.374,0.161,2.771-0.207,3.896-1.089c-1.151-0.022-2.123-0.783-2.458-1.829c0.396,0.075,0.803,0.061,1.188-0.046 c-1.204-0.24-2.111-1.305-2.111-2.579c0-0.011,0-0.023,0-0.035c0.355,0.197,0.762,0.315,1.192,0.33 c-0.706-0.473-1.171-1.277-1.171-2.19c0-0.482,0.13-0.934,0.356-1.324c1.298,1.593,3.237,2.642,5.425,2.75 c-0.045-0.191-0.068-0.394-0.068-0.599c0-1.454,1.179-2.632,2.633-2.632c0.757,0,1.44,0.319,1.921,0.832 c0.6-0.119,1.95-0.266,1.95-0.266C18.147,7.882,17.776,9.013,17.262,9.385z"></path>
+</svg>
+</div>
+</div>
+</a>
+</div>
+<div id="ShareFacebook">
+<a class="resp-sharing-button__link" rel="nofollow" href="https://facebook.com/sharer/sharer.php?u=https://www.campusmvp.es/recursos/post/Que-diferencias-hay-entre-display-block-inline-e-inline-block-en-CSS.aspx" target="_blank" aria-label="Facebook">
+<div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--medium">
+<div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+<svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+<path d="M12,0C5.383,0,0,5.383,0,12s5.383,12,12,12s12-5.383,12-12S18.617,0,12,0z M15.595,11.5H13.5c0,3.013,0,7,0,7h-3 c0,0,0-3.951,0-7h-2v-2h2V8.336c0-1.1,0.352-2.819,2.649-2.819L15.5,5.524V7.83c0,0-1.163,0-1.408,0 c-0.244,0-0.592,0.124-0.592,0.647V9.5h2.339L15.595,11.5z"></path>
+</svg>
+</div>
+</div>
+</a>
+</div>
+<div id="ShareLinkedIn">
+<a class="resp-sharing-button__link" rel="nofollow" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.campusmvp.es/recursos/post/Que-diferencias-hay-entre-display-block-inline-e-inline-block-en-CSS.aspx&amp;title=%c2%bfQu%c3%a9+diferencias+hay+entre+display%3ablock%2c+inline+e+inline-block+en+CSS%3f" target="_blank" aria-label="LinkedIn">
+<div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--medium">
+<div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+<svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+<path d="M12,0C5.383,0,0,5.383,0,12s5.383,12,12,12s12-5.383,12-12S18.617,0,12,0z M9.5,16.5h-2v-7h2V16.5z M8.5,7.5 c-0.553,0-1-0.448-1-1c0-0.552,0.447-1,1-1s1,0.448,1,1C9.5,7.052,9.053,7.5,8.5,7.5z M18.5,16.5h-3V13c0-0.277-0.225-0.5-0.5-0.5 c-0.276,0-0.5,0.223-0.5,0.5v3.5h-3c0,0,0.031-6.478,0-7h3v0.835c0,0,0.457-0.753,1.707-0.753c1.55,0,2.293,1.12,2.293,3.296V16.5z"></path>
+</svg>
+</div>
+</div>
+</a>
+</div>
+<div id="SharePocket">
+<a class="resp-sharing-button__link" rel="nofollow" href="https://getpocket.com/edit?url=https://www.campusmvp.es/recursos/post/Que-diferencias-hay-entre-display-block-inline-e-inline-block-en-CSS.aspx" target="_blank" aria-label="Pocket">
+<div class="resp-sharing-button resp-sharing-button--pocket resp-sharing-button--medium">
+<div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+<svg enable-background="new 0 0 128 128" version="1.1" viewBox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="_x37__stroke">
+<g>
+<rect clip-rule="evenodd" fill="none" fill-rule="evenodd" height="128" width="128"></rect>
+<path clip-rule="evenodd" d="M64.089,65.128    c-0.324-0.301-0.57-0.523-0.809-0.752c-7.747-7.442-15.485-14.893-23.243-22.323c-3.554-3.403-9.008-3.278-12.394,0.24    c-3.335,3.465-3.289,8.953,0.218,12.342c10.053,9.712,20.135,19.395,30.234,29.06c3.365,3.22,8.546,3.187,11.959,0.008    c1.367-1.273,2.7-2.582,4.047-3.877c8.635-8.299,17.265-16.604,25.909-24.893c2.077-1.992,3.165-4.398,2.892-7.263    c-0.347-3.643-2.268-6.265-5.717-7.521c-3.438-1.252-6.565-0.496-9.218,2.038c-4.342,4.147-8.664,8.317-12.994,12.478    C71.37,58.128,67.765,61.594,64.089,65.128z M64.067,6.688c17.398,0,34.796-0.005,52.194,0.003    c5.391,0.003,10.025,3.481,11.368,8.535c0.212,0.798,0.345,1.643,0.346,2.467c0.008,13.594,0.075,27.189-0.048,40.782    c-0.125,13.888-4.326,26.462-12.875,37.441c-9.513,12.219-21.782,20.266-36.903,23.761c-34.72,8.023-67.887-14.386-76.074-45.75    c-1.091-4.181-1.835-8.424-1.871-12.742C0.084,46.724-0.006,32.263,0,17.803C0.003,11.716,5.433,6.696,11.773,6.691    C29.204,6.68,46.636,6.688,64.067,6.688z" fill="#FFF" fill-rule="evenodd" id="Pocket_1_"></path>
+</g>
+</g>
+</svg>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+
+</article>
+
+<link rel="stylesheet" href="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/bar.css">
+<div class="cta-bar">
+<div class="cta-bar__content">
+<div class="cta-bar__logo">
+<img src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/logo-campusmvp.svg" alt="logo de campusMVP">
+</div>
+<div class="cta-bar__claim">
+
+<span class="cta-bar__claim-text">La mejor formación online para desarrolladores como tú</span>
+</div>
+<div class="cta-bar__button">
+<a href="https://www.campusmvp.es/catalogo/?link=CTA-bar" class="cta-bar__link" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;clic_boton&#39;, &#39;CTA_bar_recursos&#39;]);">Ver cursos</a>
+</div>
+</div>
+</div>
+
+
+<script type="text/javascript">
+
+    function getQSParam(name) {
+        var params = document.location.search.substr(1).split('&');
+        for(var i=0; i<params.length; i++) {
+            var param = params[i].split('=');
+            if (param[0].toLowerCase() == name.toLowerCase())
+            {
+                return param[1] ? param[1] : "true";
+            }
+        }
+        return null;
+    }
+    //Si está presente el parámetro "np" en el querystring, no sacamos la publi
+    if (getQSParam('np')) {
+        //Eliminamos la publi del contenido (no la del lateral, que no tiene que ver)
+        $('.bloquepubli, .innerAd').css('display', 'none');
+    }
+    else {
+        //cargamos los anuncios en-línea
+        var currentTags = "HTML,CSS,Evergreen,Extras,Video";
+        var currentCategs = "Desarrollo Web";
+        var adEngine = new AdEngine('/recursos/publi/enlinea.json?v=1.0.102',
+                             currentTags,
+                             currentCategs, function() {
+            var cuerpoPost = document.getElementsByClassName('PostBody')[0];
+            if (cuerpoPost.getElementsByClassName('innerAd').length == 0) {
+                adEngine.injectRandomAdPlaceholder(cuerpoPost, null, 'innerAd');
+                adEngine.insertAdsByClassName('innerAd');
+            }
+            //Se cargan los anuncios en los elementos con la clase indicada
+            adEngine.insertAdsByClassName('bloquepubli');
+        });
+    }
+</script>
+<rdf:rdf xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:description rdf:about="https://www.campusmvp.es/recursos/post/Que-diferencias-hay-entre-display-block-inline-e-inline-block-en-CSS.aspx" dc:identifier="https://www.campusmvp.es/recursos/post/Que-diferencias-hay-entre-display-block-inline-e-inline-block-en-CSS.aspx" dc:title="¿Qué diferencias hay entre display:block, inline e inline-block en CSS?" trackback:ping="https://www.campusmvp.es/recursos/trackback.axd?id=6e85cc55-84ac-4b33-99d9-e7e895806229">
+</rdf:description></rdf:rdf>
+<div id="relatedPosts"><h3>Publicaciones relacionadas</h3><div><a href="https://www.campusmvp.es/recursos/post/que-diferencia-hay-entre-docker-contenedores-y-maquinas-virtuales.aspx">¿Qué diferencia hay entre Docker (Contenedores) y Máquinas virtuales (VMWare, VirtualBox...)?</a><span>Mucha gente, cuando oye hablar de Docker y de lo que hace, lo primero que piensa es en máquinas virt...</span><a href="https://www.campusmvp.es/recursos/post/que-diferencia-existe-entre-usar-1fr-y-auto-en-una-rejilla-con-css-grid.aspx">¿Qué diferencia existe entre usar 1fr y auto en una rejilla con CSS Grid?</a><span>Las unidades fr y auto de las rejillas de CSS Grid, a simple vista pueden parecer prácticamente idén...</span><a href="https://www.campusmvp.es/recursos/post/estilos-css-para-imprimir-pautas-basicas-y-ejemplos.aspx">Estilos CSS para imprimir: pautas básicas y ejemplos</a><span>Los estilos específicos para imprimir muchas veces son los grandes olvidados, ya no solo a la hora d...</span></div></div>
+<div class="well-global">
+<h3 id="comment" class="well-global-title">
+Comentarios (13)
+<a id="commenttoggle" style="float: right; width: 20px; height: 20px; border: 1px solid #ccc; text-decoration: none; text-align: center" href="javascript:toggle_visibility(&#39;commentlist&#39;, &#39;commenttoggle&#39;);">-</a>
+</h3>
+<div id="commentlist" style="display: block">
+<div id="id_3cc513cb-0d24-4ec0-84c1-579941eddc45" class="vcard comment">
+<div class="comment-contents">
+<div class="comment_header">
+<span class="gravatar Left">
+<img width="50" class="photo" height="50" alt="Michael" src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/a7409bece9034f183054d0a56bd521e9.png">
+</span>
+<div class="visitor">
+<span class="fn">Michael</span>
+<div>
+<a href="https://www.campusmvp.es/recursos/post/Que-diferencias-hay-entre-display-block-inline-e-inline-block-en-CSS.aspx#id_3cc513cb-0d24-4ec0-84c1-579941eddc45" class="DateTime">15/09/2016 1:11:58</a>
+</div>
+</div>
+</div>
+<div class="text-wrap">
+<p>Hola José Manuel,
+<br>El motivo de mi pregunta, es saber porque se forma una columna en mi web cuando utilizo
+<br> .hppforward, .hppback {
+<br>&nbsp;&nbsp;&nbsp;&nbsp;display:inline-block;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;float:left;
+<br>}
+<br>Este código me lo aconsejaron porque el carrusel de&nbsp;&nbsp;la plantilla no se ajustaba correctamete, pero por consiguiente se crea una columna blanca. He tenido que eliminar el código, pero se desajusta solamente las flechas del carrusel. Me gustaría conocer el motivo y la solución. Muchas gracias. <br>Un cordial saludo.</p>
+</div>
+<p class="author">
+<span class="reply-to"><a href="javascript:void(0);" class="reply-to-comment" onclick="BlogEngine.replyToComment(&#39;3cc513cb-0d24-4ec0-84c1-579941eddc45&#39;);">Responder</a></span>
+</p>
+</div>
+<div class="comment-replies" id="replies_3cc513cb-0d24-4ec0-84c1-579941eddc45">
+<div id="id_c1330bd8-f9e1-458f-a073-b2ae73a2baa7" class="vcard comment">
+<div class="comment-contents">
+<div class="comment_header">
+<span class="gravatar Left">
+<img width="50" class="photo" height="50" alt="José Manuel Alarcón" src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/36420273b2f101ed57d8a8b113096425.jpeg">
+</span>
+<div class="visitor">
+<span class="fn">José Manuel Alarcón</span>
+<div>
+<a href="https://www.campusmvp.es/recursos/post/Que-diferencias-hay-entre-display-block-inline-e-inline-block-en-CSS.aspx#id_c1330bd8-f9e1-458f-a073-b2ae73a2baa7" class="DateTime">15/09/2016 8:42:05</a>
+</div>
+</div>
+</div>
+<div class="text-wrap">
+<p>Hola Michael:
+<br> <br>Pues con los datos que me das poco te puedo decir. Ese par de clases no sé a qué se aplican ni qué "framework" CSS estás usando, si es que usas alguno.
+<br> <br>Lo que están haciendo esos selectores es aplicar el estilo de visualización in-line-block (te refiero al post para ver su significado) a los elementos que lleven esas clases aplicadas, además de flotarlos a la izquierda. Supongo que si los elementos a los que se le aplica tienen un ancho fijo y están metidos dentro de otro elemento en el que no caben, los pondrá unos encima de otros al flotarlos y por eso te aparece una columna.
+<br> <br>Lo que te consejo modestamente es que, si quieres aprender en serio HTML y CSS y comprender por qué te funcionan estas cosas y aprender a hacerlas lo mejor posible por ti mismo, te apuntes a mi curso de "Creación Profesional de páginas web con HTML y CSS": /catalogo/Product-Creaci%C3%B3n-profesional-de-p%C3%A1ginas-web-con-HTML5-y-CSS3_185.aspx
+<br> <br>Con él dominarás a fondo todas estas cuestiones y muchas más.
+<br> <br>Saludos!</p>
+</div>
+<p class="author">
+<span class="reply-to"><a href="javascript:void(0);" class="reply-to-comment" onclick="BlogEngine.replyToComment(&#39;c1330bd8-f9e1-458f-a073-b2ae73a2baa7&#39;);">Responder</a></span>
+</p>
+</div>
+<div class="comment-replies" id="replies_c1330bd8-f9e1-458f-a073-b2ae73a2baa7">
+<div id="id_67cfdd14-0865-4875-bb70-689d0470bed5" class="vcard comment">
+<div class="comment-contents">
+<div class="comment_header">
+<span class="gravatar Left">
+<img width="50" class="photo" height="50" alt="Michael" src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/a7409bece9034f183054d0a56bd521e9.png">
+</span>
+<div class="visitor">
+<span class="fn">Michael</span>
+<div>
+<a href="https://www.campusmvp.es/recursos/post/Que-diferencias-hay-entre-display-block-inline-e-inline-block-en-CSS.aspx#id_67cfdd14-0865-4875-bb70-689d0470bed5" class="DateTime">15/09/2016 12:05:46</a>
+</div>
+</div>
+</div>
+<div class="text-wrap">
+<p>Hola José Manuel,
+<br>Muchas gracia por tu pronta respuesta y agradecer la invitación para realizar el curso.
+<br>Espero más adelante apuntarme pero las circunstancias que tengo no me permiten dedicar mucho tiempo a realizar estos cursos, pero no descarto realizarlo en un futuro cercano.
+<br>Un cordial saludo !</p>
+</div>
+<p class="author">
+<span class="reply-to"><a href="javascript:void(0);" class="reply-to-comment" onclick="BlogEngine.replyToComment(&#39;67cfdd14-0865-4875-bb70-689d0470bed5&#39;);">Responder</a></span>
+</p>
+</div>
+<div class="comment-replies" id="replies_67cfdd14-0865-4875-bb70-689d0470bed5" style="display:none;">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="id_9819bb30-1b8a-43ae-9fee-8da2d9aba179" class="vcard comment">
+<div class="comment-contents">
+<div class="comment_header">
+<span class="gravatar Left">
+<img width="50" class="photo" height="50" alt="Francno" src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/72cd6b070c996ec22727afc42e282bd9.jpg">
+</span>
+<div class="visitor">
+<span class="fn">Francno</span>
+<div>
+<a href="https://www.campusmvp.es/recursos/post/Que-diferencias-hay-entre-display-block-inline-e-inline-block-en-CSS.aspx#id_9819bb30-1b8a-43ae-9fee-8da2d9aba179" class="DateTime">13/10/2016 17:23:23</a>
+</div>
+</div>
+</div>
+<div class="text-wrap">
+<p>Sabes no puedo que me aparezca con el comando de display:block, hay otra forma...
+<br> <br> <br>Gracias.</p>
+</div>
+<p class="author">
+<span class="reply-to"><a href="javascript:void(0);" class="reply-to-comment" onclick="BlogEngine.replyToComment(&#39;9819bb30-1b8a-43ae-9fee-8da2d9aba179&#39;);">Responder</a></span>
+</p>
+</div>
+<div class="comment-replies" id="replies_9819bb30-1b8a-43ae-9fee-8da2d9aba179" style="display:none;">
+</div>
+</div>
+<div id="id_af60b142-6ba4-4df0-8cd6-3c0bcdadb360" class="vcard comment">
+<div class="comment-contents">
+<div class="comment_header">
+<span class="gravatar Left">
+<img width="50" class="photo" height="50" alt="Steven" src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/978825b43c9d4bbab6ecc8684527f82d.jpg">
+</span>
+<div class="visitor">
+<span class="fn">Steven</span>
+<div>
+<a href="https://www.campusmvp.es/recursos/post/Que-diferencias-hay-entre-display-block-inline-e-inline-block-en-CSS.aspx#id_af60b142-6ba4-4df0-8cd6-3c0bcdadb360" class="DateTime">18/04/2018 6:10:43</a>
+</div>
+</div>
+</div>
+<div class="text-wrap">
+<p>Y para colocarle a cada caja su respetivo titulo en la parte inferior, como seria profe.?</p>
+</div>
+<p class="author">
+<span class="reply-to"><a href="javascript:void(0);" class="reply-to-comment" onclick="BlogEngine.replyToComment(&#39;af60b142-6ba4-4df0-8cd6-3c0bcdadb360&#39;);">Responder</a></span>
+</p>
+</div>
+<div class="comment-replies" id="replies_af60b142-6ba4-4df0-8cd6-3c0bcdadb360">
+<div id="id_78fdce18-bc9c-4e3e-b7e8-6f54b34b0a3e" class="vcard comment">
+<div class="comment-contents">
+<div class="comment_header">
+<span class="gravatar Left">
+<img width="50" class="photo" height="50" alt="Enrique" src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/2d6937f2dc172839ba752b4da1bfde4f.jpeg">
+</span>
+<div class="visitor">
+<span class="fn">Enrique</span>
+<div>
+<a href="https://www.campusmvp.es/recursos/post/Que-diferencias-hay-entre-display-block-inline-e-inline-block-en-CSS.aspx#id_78fdce18-bc9c-4e3e-b7e8-6f54b34b0a3e" class="DateTime">22/04/2018 2:31:47</a>
+</div>
+</div>
+</div>
+<div class="text-wrap">
+<p>solamente aplica la h2 en la estructura justo después de cada span o cada div .... aunque no es una practica común puedes enlazarlos atravez de el atributo div </p>
+</div>
+<p class="author">
+<span class="reply-to"><a href="javascript:void(0);" class="reply-to-comment" onclick="BlogEngine.replyToComment(&#39;78fdce18-bc9c-4e3e-b7e8-6f54b34b0a3e&#39;);">Responder</a></span>
+</p>
+</div>
+<div class="comment-replies" id="replies_78fdce18-bc9c-4e3e-b7e8-6f54b34b0a3e" style="display:none;">
+</div>
+</div>
+</div>
+</div>
+<div id="id_679f82c3-be81-4760-8417-472d07ccb028" class="vcard comment">
+<div class="comment-contents">
+<div class="comment_header">
+<span class="gravatar Left">
+<img width="50" class="photo" height="50" alt="Ramón" src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/1a003ffd8b0714e76bf6895a08038349.jpg">
+</span>
+<div class="visitor">
+<span class="fn">Ramón</span>
+<div>
+<a href="https://www.campusmvp.es/recursos/post/Que-diferencias-hay-entre-display-block-inline-e-inline-block-en-CSS.aspx#id_679f82c3-be81-4760-8417-472d07ccb028" class="DateTime">17/05/2018 12:15:23</a>
+</div>
+</div>
+</div>
+<div class="text-wrap">
+<p>Siempre son dos herramientas que se suelen confundir, bien desarrollado el artículo</p>
+</div>
+<p class="author">
+<span class="reply-to"><a href="javascript:void(0);" class="reply-to-comment" onclick="BlogEngine.replyToComment(&#39;679f82c3-be81-4760-8417-472d07ccb028&#39;);">Responder</a></span>
+</p>
+</div>
+<div class="comment-replies" id="replies_679f82c3-be81-4760-8417-472d07ccb028" style="display:none;">
+</div>
+</div>
+<div id="id_e4007801-0000-4f6d-8f48-09b707e84ad4" class="vcard comment">
+<div class="comment-contents">
+<div class="comment_header">
+<span class="gravatar Left">
+<img width="50" class="photo" height="50" alt="Miguel " src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/36c5f07330507ca6d0bba36bed5941ad.jpg">
+</span>
+<div class="visitor">
+
+<span class="fn">Miguel </span>
+<div>
+<a href="https://www.campusmvp.es/recursos/post/Que-diferencias-hay-entre-display-block-inline-e-inline-block-en-CSS.aspx#id_e4007801-0000-4f6d-8f48-09b707e84ad4" class="DateTime">29/06/2018 15:58:53</a>
+</div>
+</div>
+</div>
+<div class="text-wrap">
+<p>Perfectamente explicado e ilustrado. Muchas gracias.</p>
+</div>
+<p class="author">
+<span class="reply-to"><a href="javascript:void(0);" class="reply-to-comment" onclick="BlogEngine.replyToComment(&#39;e4007801-0000-4f6d-8f48-09b707e84ad4&#39;);">Responder</a></span>
+</p>
+</div>
+<div class="comment-replies" id="replies_e4007801-0000-4f6d-8f48-09b707e84ad4" style="display:none;">
+</div>
+</div>
+<div id="id_c056d517-ee9e-4065-a103-071837083ded" class="vcard comment">
+<div class="comment-contents">
+<div class="comment_header">
+<span class="gravatar Left">
+<img width="50" class="photo" height="50" alt="German" src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/a8b11dc287702b5b911a206133e8f50c.jpg">
+</span>
+<div class="visitor">
+<span class="fn">German</span>
+<div>
+<a href="https://www.campusmvp.es/recursos/post/Que-diferencias-hay-entre-display-block-inline-e-inline-block-en-CSS.aspx#id_c056d517-ee9e-4065-a103-071837083ded" class="DateTime">20/04/2020 16:20:22</a>
+</div>
+</div>
+</div>
+<div class="text-wrap">
+<p>Tan simple, pero tan necesaria esta magistral explicación! Me sirvió mucho; gracias por tomarse la molestia de enseñar. Un saludo.</p>
+</div>
+<p class="author">
+<span class="reply-to"><a href="javascript:void(0);" class="reply-to-comment" onclick="BlogEngine.replyToComment(&#39;c056d517-ee9e-4065-a103-071837083ded&#39;);">Responder</a></span>
+</p>
+</div>
+<div class="comment-replies" id="replies_c056d517-ee9e-4065-a103-071837083ded" style="display:none;">
+</div>
+</div>
+<div id="id_02e00d8a-ff08-4cfe-bd18-9bf8dff04937" class="vcard comment">
+<div class="comment-contents">
+<div class="comment_header">
+<span class="gravatar Left">
+<img width="50" class="photo" height="50" alt="Rolland" src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/60bd7b795e0115cc6094d2f6f4f1be2c.jpg">
+</span>
+<div class="visitor">
+<span class="fn">Rolland</span>
+<div>
+<a href="https://www.campusmvp.es/recursos/post/Que-diferencias-hay-entre-display-block-inline-e-inline-block-en-CSS.aspx#id_02e00d8a-ff08-4cfe-bd18-9bf8dff04937" class="DateTime">28/12/2020 12:15:35</a>
+</div>
+</div>
+</div>
+<div class="text-wrap">
+<p>Hola:
+<br>"div"&nbsp;&nbsp;por defecto es display: block, quiero cambiarlo a display: inline; pero me sigue renderizando como block, incluso me elimina el resto del estilo que le establezco. Puedo cambiarlo a "span", pero para conocimiento saber si existe alguna limitación o exeption de regla con "div".
+<br> <br>Gracias de antemano
+<br> <br>PS: por cierto, muy ilustrativo tu artículo.
+<br> <br>Un saludo</p>
+</div>
+<p class="author">
+<span class="reply-to"><a href="javascript:void(0);" class="reply-to-comment" onclick="BlogEngine.replyToComment(&#39;02e00d8a-ff08-4cfe-bd18-9bf8dff04937&#39;);">Responder</a></span>
+</p>
+</div>
+<div class="comment-replies" id="replies_02e00d8a-ff08-4cfe-bd18-9bf8dff04937">
+<div id="id_e284b8ef-2375-43c4-b566-a7c036cba116" class="vcard comment">
+<div class="comment-contents">
+<div class="comment_header">
+<span class="gravatar Left">
+<img width="50" class="photo" height="50" alt="José Manuel Alarcón" src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/36420273b2f101ed57d8a8b113096425.jpeg">
+</span>
+<div class="visitor">
+<span class="fn">José Manuel Alarcón</span>
+<div>
+<a href="https://www.campusmvp.es/recursos/post/Que-diferencias-hay-entre-display-block-inline-e-inline-block-en-CSS.aspx#id_e284b8ef-2375-43c4-b566-a7c036cba116" class="DateTime">28/12/2020 15:58:37</a>
+</div>
+</div>
+</div>
+<div class="text-wrap">
+<p>Hola:
+<br> <br>Gracias.
+<br> <br>No, no hay ninguna excepción con div. Todo lo explicado es válido.
+<br> <br>Supongo que lo que te pasa es que hay alguna regla CSS más específica que prevalece sobre lo que tú le estás poniendo. Lo puedes poner como inline, inline-block o como quieras sin problema.
+<br> <br>Quizá te interese aprender a fondo HTML y CSS: <a href="https://www.campusmvp.es/catalogo/Product-HTML5-y-CSS3-a-fondo-para-desarrolladores_185.aspx" rel="nofollow">www.campusmvp.es/.../...a-desarrolladores_185.aspx</a> 😉
+<br> <br>Saludos!</p>
+</div>
+<p class="author">
+<span class="reply-to"><a href="javascript:void(0);" class="reply-to-comment" onclick="BlogEngine.replyToComment(&#39;e284b8ef-2375-43c4-b566-a7c036cba116&#39;);">Responder</a></span>
+</p>
+</div>
+<div class="comment-replies" id="replies_e284b8ef-2375-43c4-b566-a7c036cba116" style="display:none;">
+</div>
+</div>
+</div>
+</div>
+<div id="id_affaf4fa-7e3f-4eae-b16e-f6eb72b91239" class="vcard comment">
+<div class="comment-contents">
+<div class="comment_header">
+<span class="gravatar Left">
+<img width="50" class="photo" height="50" alt="Grace" src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/4a17b63dd19d308b9c8becf7699b6f22.jpg">
+</span>
+<div class="visitor">
+<span class="fn">Grace</span>
+<div>
+<a href="https://www.campusmvp.es/recursos/post/Que-diferencias-hay-entre-display-block-inline-e-inline-block-en-CSS.aspx#id_affaf4fa-7e3f-4eae-b16e-f6eb72b91239" class="DateTime">23/08/2021 8:28:19</a>
+</div>
+</div>
+</div>
+<div class="text-wrap">
+<p>Gracias, muy bien explicado. Me fue muy útil. !!!</p>
+</div>
+<p class="author">
+<span class="reply-to"><a href="javascript:void(0);" class="reply-to-comment" onclick="BlogEngine.replyToComment(&#39;affaf4fa-7e3f-4eae-b16e-f6eb72b91239&#39;);">Responder</a></span>
+</p>
+</div>
+<div class="comment-replies" id="replies_affaf4fa-7e3f-4eae-b16e-f6eb72b91239" style="display:none;">
+</div>
+</div>
+<div id="id_876ccb6c-8afd-49da-8b87-a43d3d875115" class="vcard comment">
+<div class="comment-contents">
+<div class="comment_header">
+<span class="gravatar Left">
+<img width="50" class="photo" height="50" alt="Carlos" src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/f8100faed90c8ba17b525ee0723b6285.jpg">
+</span>
+<div class="visitor">
+<span class="fn">Carlos</span>
+<div>
+<a href="https://www.campusmvp.es/recursos/post/Que-diferencias-hay-entre-display-block-inline-e-inline-block-en-CSS.aspx#id_876ccb6c-8afd-49da-8b87-a43d3d875115" class="DateTime">15/03/2022 5:44:52</a>
+</div>
+</div>
+</div>
+<div class="text-wrap">
+<p>Buena información...felicidades!!</p>
+</div>
+<p class="author">
+<span class="reply-to"><a href="javascript:void(0);" class="reply-to-comment" onclick="BlogEngine.replyToComment(&#39;876ccb6c-8afd-49da-8b87-a43d3d875115&#39;);">Responder</a></span>
+</p>
+</div>
+<div class="comment-replies" id="replies_876ccb6c-8afd-49da-8b87-a43d3d875115" style="display:none;">
+</div>
+</div>
+</div>
+</div>
+<div id="comment-form">
+<img src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/ajax-loader.gif" width="24" height="24" alt="Saving the comment" style="display: none" id="ajaxLoader">
+<span id="status"></span>
+<div class="commentForm">
+<h3 id="addcomment">Agregar comentario</h3>
+<p>
+<label for="txtName" class="lbl-user">Nombre*</label>
+<input type="text" class="txt-user" name="txtName" id="txtName">
+</p>
+<p>
+<label for="txtEmail" class="lbl-email">Correo Electrónico*</label>
+<input type="text" class="txt-email" id="txtEmail">
+<span id="gravatarmsg"></span>
+</p>
+<p>
+<label for="txtWebsite" class="lbl-website">Sitio Web</label>
+<input type="text" class="txt-website" id="txtWebsite">
+</p>
+<p>
+<label for="txtContent" class="lbl-content">Comentario*</label>
+<textarea class="txt-content" id="txtContent" cols="50" rows="10" name="txtContent"></textarea>
+</p>
+<p>
+<input type="checkbox" id="cbNotify" class="cmnt-frm-notify" style="width: auto">
+<label for="cbNotify" style="width: auto; float: none; display: inline; padding-left: 5px">Notificarme cuando se publiquen nuevos comentarios</label>
+</p>
+<p style="font-size:small;padding-top:10px;padding-left:10px;">Los datos anteriores se utilizarán exclusivamente para permitirte hacer el comentario y, si lo seleccionas, notificarte de nuevos comentarios en este artículo, pero no se procesarán ni se utilizarán para ningún otro propósito. Lee nuestra <a href="https://www.krasis.com/aviso_legal.htm" target="_blank">política de privacidad</a>.
+</p>
+<p>
+<input type="button" id="btnSaveAjax" class="btn-save" style="margin-top: 10px;margin-bottom:20px;position: absolute;top: 100%;right: 0;" value="Guardar comentario " onclick="return BlogEngine.validateAndSubmitCommentForm()">
+</p>
+</div><input type="hidden" name="ctl00$cphBody$ucCommentList$hiddenReplyTo" id="ctl00_cphBody_ucCommentList_hiddenReplyTo">
+<p id="cancelReply" style="display: none;">
+<a href="javascript:void(0);" onclick="BlogEngine.cancelReply();">Cancelar respuesta al comentario</a>
+</p>
+<p><label for="simpleCaptchaValue" style="margin-right: 5px;">Huevo, perro, abeja o viernes, ¿cuál es un día de la semana?</label><input id="simpleCaptchaValue" name="simpleCaptchaValue" type="text" tabindex="0" maxlength="30" value=""><span id="spnSimpleCaptchaIncorrect" style="display:none;color:Red;">The captcha value you provided is incorrect.
+</span></p><input type="hidden" name="ctl00$cphBody$ucCommentList$hfCaptcha" id="ctl00_cphBody_ucCommentList_hfCaptcha" value="4c2de296-1c01-47d0-bd86-bc77a03d3b96">
+</div>
+<script type="text/javascript">
+        BlogEngine.comments.flagImage = BlogEngine.$("imgFlag");
+        BlogEngine.comments.contentBox = BlogEngine.$("txtContent");
+        BlogEngine.comments.moderation = true;
+	    BlogEngine.comments.checkName = true;
+	    BlogEngine.comments.postAuthor = "JMAlarcon";
+	    BlogEngine.comments.nameBox = BlogEngine.$("txtName");
+	    BlogEngine.comments.emailBox = BlogEngine.$("txtEmail");
+	    BlogEngine.comments.websiteBox = BlogEngine.$("txtWebsite");
+	    BlogEngine.comments.countryDropDown = BlogEngine.$("ddlCountry");
+	    BlogEngine.comments.controlId = 'ctl00$cphBody$ucCommentList';
+	    BlogEngine.comments.captchaField = BlogEngine.$('ctl00_cphBody_ucCommentList_hfCaptcha');
+        BlogEngine.comments.replyToId = BlogEngine.$("ctl00_cphBody_ucCommentList_hiddenReplyTo");
+    </script>
+<script type="text/javascript">
+    function toggle_visibility(id, id2) {
+        var e = document.getElementById(id);
+        var h = document.getElementById(id2);
+        if (e.style.display == 'block') {
+            e.style.display = 'none';
+            h.innerHTML = "+";
+        }
+        else {
+            e.style.display = 'block';
+            h.innerHTML = "-";
+        }
+    }
+</script>
+</section>
+<aside class="Widgets-Wrapper">
+
+<img src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/logo.jpg" style="display:none;">
+<div id="widgetzone_be_WIDGET_ZONE" class="widgetzone">
+<div class="Widget textbox" id="widgetdc6be479-febc-449e-8260-9bf802067fcb">
+<div class="WidgetContent">
+<div id="banner-arriba" class="banner-lateral" style="display: block;"><a class="AdLink AdLink--img" href="https://www.campusmvp.es/catalogo/Product-HTML5-y-CSS3-a-fondo-para-desarrolladores_185.aspx" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Anuncios Lateral Blog&#39;, &#39;/catalogo/Product-HTML5-y-CSS3-a-fondo-para-desarrolladores_185.aspx&#39;, &#39;Curso HTML5 en banner-arriba&#39;]);"><img style="border:0;" src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/banner-curso_16.gif"></a></div>
+</div>
+</div>
+<div class="Widget recentposts" id="widgetb1cde929-98d5-443b-9611-6857d6b4bf05">
+<div class="WidgetHeader">
+Artículos recientes</div>
+<div class="WidgetContent">
+<ul class="recentPosts" id="recentPosts"><li><a href="https://www.campusmvp.es/recursos/post/webasssembly-acelerando-y-creando-nuevas-posibilidades-en-desarrollo-web.aspx">WebAsssembly: acelerando y creando nuevas posibilidades en desarrollo web</a></li><li><a href="https://www.campusmvp.es/recursos/post/actualidad-webgpu-net-8-preview-canon-digital-contenedores-en-net-liberado-stablelm-aislar-codigo-net-y-airtags-diy.aspx">Actualidad: WebGPU, .NET 8 preview, canon digital, contenedores en .NET, liberado StableLM, aislar código .NET y AirTags DIY</a></li><li><a href="https://www.campusmvp.es/recursos/post/pandas-2-0-para-ciencia-de-datos-todas-sus-novedades.aspx">pandas 2.0 para ciencia de datos: todas sus novedades</a></li><li><a href="https://www.campusmvp.es/recursos/post/pytorch-2-0-presenta-la-api-de-transformers-acelerada-para-democratizar-el-aprendizaje-automatico.aspx">PyTorch 2.0 presenta la API de Transformers acelerada para democratizar el aprendizaje automático</a></li><li><a href="https://www.campusmvp.es/recursos/post/java-20-ya-esta-aqui-y-estas-son-sus-novedades.aspx">Java 20 ya está aquí y estas son sus novedades</a></li></ul>
+</div>
+</div>
+<div class="Widget linklist" id="widget54c76c80-9f35-47b5-8b7e-040da77299b8">
+<div class="WidgetHeader">
+Nuestros Cursos y Libros</div>
+<div class="WidgetContent">
+<ul id="ctl00_widgetContainer54c76c809f3547b58b7e040da77299b8_54c76c809f3547b58b7e040da77299b8_ulLinks"><li><a href="https://www.campusmvp.es/catalogo/#.Programaci%C3%B3n-Web">Cursos de Programación Web</a></li><li><a href="https://www.campusmvp.es/catalogo/#.Acceso-a-Datos">Cursos de Acceso a Datos</a></li><li><a href="https://www.campusmvp.es/catalogo/#.Lenguajes-y-plataformas">Cursos de Lenguajes y Plataformas</a></li><li><a href="https://www.campusmvp.es/catalogo/#.Ex%C3%A1menes-Oficiales">Preparación de Exámenes Oficiales</a></li><li><a href="https://www.campusmvp.es/catalogo/#.Libros">Libros de programación</a></li></ul>
+</div>
+</div>
+<div class="Widget textbox" id="widget0e1aa815-2eeb-4ab8-9b64-ccc882bbf6c4">
+<div class="WidgetHeader">
+Últimos vídeos</div>
+<div class="WidgetContent">
+<div id="YouTubeRecentVideos"><iframe width="300" height="200" src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/XJeBmupK5MI.html" frameborder="0" allowfullscreen=""></iframe><br><iframe width="300" height="200" src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/Ww7HU0jDDOw.html" frameborder="0" allowfullscreen=""></iframe><br><iframe width="300" height="200" src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/_29JOV9wYWY.html" frameborder="0" allowfullscreen=""></iframe><br></div>
+<script src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/ytrvjson.js.descarga"></script>
+<script defer="" src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/videosCampusMVP.js.descarga"></script>
+</div>
+</div>
+<div class="Widget recentcomments" id="widgetbd962c99-4ea8-47fa-a171-dde4b808a2c8">
+<div class="WidgetHeader">
+Comentarios Recientes</div>
+<div class="WidgetContent">
+<ul id="recentComments" class="recentComments"><li><a href="https://www.campusmvp.es/recursos/post/JavaScript-ECMAScript-ES6-Existe-ES7-Aclarando-las-diferentes-versiones-del-lenguaje.aspx" class="postTitle">JavaScript, ECMAScript, ES6, ¿Existe ES7?... Aclarando las diferentes versiones del lenguaje</a> (11)<br>Aliona escribió: Molt util la informacio. Moltes gracies molt agraï... <a href="https://www.campusmvp.es/recursos/post/JavaScript-ECMAScript-ES6-Existe-ES7-Aclarando-las-diferentes-versiones-del-lenguaje.aspx#id_48a681aa-b487-4212-acd0-88a1bb5f1d2b" class="moreLink">[Más]</a></li><li><a href="https://www.campusmvp.es/recursos/post/JavaScript-ECMAScript-ES6-Existe-ES7-Aclarando-las-diferentes-versiones-del-lenguaje.aspx" class="postTitle">JavaScript, ECMAScript, ES6, ¿Existe ES7?... Aclarando las diferentes versiones del lenguaje</a> (11)<br>José Manuel Alarcón escribió: Muerto y enterrado, junto a Flash. Solo lo usaba A... <a href="https://www.campusmvp.es/recursos/post/JavaScript-ECMAScript-ES6-Existe-ES7-Aclarando-las-diferentes-versiones-del-lenguaje.aspx#id_6b0bfc83-b374-4c17-8d49-95a0c355b543" class="moreLink">[Más]</a></li><li><a href="https://www.campusmvp.es/recursos/post/JavaScript-ECMAScript-ES6-Existe-ES7-Aclarando-las-diferentes-versiones-del-lenguaje.aspx" class="postTitle">JavaScript, ECMAScript, ES6, ¿Existe ES7?... Aclarando las diferentes versiones del lenguaje</a> (11)<br>Alvaro Ayala | Diseño web Bogotá escribió: No recordaba ActionScript, jajaja, que habra pasad... <a href="https://www.campusmvp.es/recursos/post/JavaScript-ECMAScript-ES6-Existe-ES7-Aclarando-las-diferentes-versiones-del-lenguaje.aspx#id_6ab77aa4-bbe6-4357-8c6a-9d597ea4d610" class="moreLink">[Más]</a></li><li><a href="https://www.campusmvp.es/recursos/post/lenguaje-c-sharp-interfaces-y-que-diferencia-existe-entre-implementarlas-explicita-o-implicitamente.aspx" class="postTitle">Lenguaje C#: interfaces y qué diferencia existe entre implementarlas explícita o implícitamente</a> (5)<br>David Santiago escribió: ¡Excelente explicación! Gracias. <a href="https://www.campusmvp.es/recursos/post/lenguaje-c-sharp-interfaces-y-que-diferencia-existe-entre-implementarlas-explicita-o-implicitamente.aspx#id_053bb93a-e77c-41ea-a0b6-1a7077366d6c" class="moreLink">[Más]</a></li><li><a href="https://www.campusmvp.es/recursos/post/como-obtener-el-codigo-fuente-de-cualquier-programa-o-dll-escrita-para-net-c.aspx" class="postTitle">Cómo obtener el código fuente de cualquier programa o DLL escrita para .NET (C#)</a> (5)<br>José Manuel Alarcón escribió: Hola Daniel:
+El vídeo sí que está. Quizá te lo ... <a href="https://www.campusmvp.es/recursos/post/como-obtener-el-codigo-fuente-de-cualquier-programa-o-dll-escrita-para-net-c.aspx#id_82fbca46-0d39-4f37-acc0-8f3c5d186ca5" class="moreLink">[Más]</a></li></ul><a href="https://www.campusmvp.es/recursos/syndication.axd?comments=true">Comment RSS <img src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/rssButton.png" alt=""></a>
+</div>
+</div>
+<div class="Widget textbox" id="widget8448517f-c6af-41f9-aab4-67013faf890e">
+<div class="WidgetContent">
+<ul id="social-widget">
+<li><a class="linkedin-widget" href="https://www.linkedin.com/company/campusmvp" target="_blank"> Linkedin</a></li>
+<li><a class="tw-widget" href="https://twitter.com/campusmvp" target="_blank"> Twitter</a></li>
+<li><a class="fb-widget" href="https://www.facebook.com/campusMVP" target="_blank"> Facebook</a></li>
+<li><a class="YT-widget" href="https://www.youtube.com/campusMVPes" target="_blank"> YouTube</a></li>
+<li><a class="rss-widget" href="https://www.campusmvp.es/recursos/syndication.axd" target="_blank"> RSS</a></li>
+</ul>
+</div>
+</div>
+<div class="Widget textbox" id="widget30c87489-2890-4cf1-8708-88ce0ead5f8c">
+<div class="WidgetContent">
+<div id="banner-abajo" class="banner-lateral" style="display: block;"><a class="AdLink AdLink--img" href="https://www.campusmvp.es/catalogo/Product-HTML5-y-CSS3-a-fondo-para-desarrolladores_185.aspx" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Anuncios Lateral Blog&#39;, &#39;/catalogo/Product-HTML5-y-CSS3-a-fondo-para-desarrolladores_185.aspx&#39;, &#39;Curso HTML5 en banner-abajo&#39;]);"><img style="border:0;" src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/banner-curso_16.gif"></a></div>
+</div>
+</div></div>
+</aside>
+</div>
+
+<footer class="cmvp-footer">
+<div class="cmvp-footer-main">
+<div class="cmvp-footer__zona-1">
+<h3>¿Qué vas a <a class="cmvp-footer__link-aprender-a-programar" href="https://www.campusmvp.es/aprender-a-programar-online">aprender a programar</a> hoy?</h3>
+<div class="cmvp-footer__zona-1__inner">
+<ul class="cmvp-footer__zona-1__bloque cmvp-footer__zona-1__bloque--1">
+<li><a href="https://www.campusmvp.es/catalogo/Product-Desarrollo-de-aplicaciones-con-la-plataforma-Java_231.aspx">Curso Java (Plataforma + Lenguaje)</a></li>
+<li><a href="https://www.campusmvp.es/catalogo/Product-Docker-y-Kubernetes-desarrollo-y-despliegue-de-aplicaciones-basadas-en-contenedores_237.aspx">Curso Kubernetes y Docker (DevOps)</a></li>
+<li><a href="https://www.campusmvp.es/catalogo/Product-Desarrollo-de-aplicaciones-Web-con-ASP.NET-Core-y-MVC_227.aspx">Curso ASP.NET Core MVC (Backend)</a></li>
+<li><a href="https://www.campusmvp.es/catalogo/Product-Desarrollo-con-la-plataforma-.NET-6-y-C-10_242.aspx">Curso de Plataforma .NET y C#</a></li>
+<li><a href="https://www.campusmvp.es/catalogo/Product-Desarrollo-de-aplicaciones-de-gesti%C3%B3n-empresariales-con-Velneo---Curso-Oficial_238.aspx">Curso Creación de Aplicaciones De Gestión</a></li>
+<li><a href="https://www.campusmvp.es/catalogo/Product-Especialista-en-programaci%C3%B3n-de-bases-de-datos-con-SQL-Server_236.aspx">Curso SQL Server (Especialista Base Datos)</a></li>
+</ul>
+<ul class="cmvp-footer__zona-1__bloque cmvp-footer__zona-1__bloque--2">
+<li><a href="https://www.campusmvp.es/catalogo/Product-HTML5-y-CSS3-a-fondo-para-desarrolladores_185.aspx">Curso HTML5 y CSS3 para programación</a></li>
+<li><a href="https://www.campusmvp.es/catalogo/Product-Programaci%C3%B3n-avanzada-con-JavaScript-y-ECMAScript_206.aspx">Curso JavaScript/ECMAScript (Avanzado)</a></li>
+<li><a href="https://www.campusmvp.es/catalogo/Product-Interfaces-web-responsive-con-HTML5,-Flexbox,-CSS-Grid-y-Bootstrap_212.aspx">Curso Interfaces Responsive y Bootstrap</a></li>
+<li><a href="https://www.campusmvp.es/catalogo/Product-Desarrollo-de-aplicaciones-web-con-Angular-15_232.aspx">Curso Angular (Aplicaciones Web)</a></li>
+<li><a href="https://www.campusmvp.es/catalogo/Product-Desarrollo-de-aplicaciones-y-servicios-Web-en-Java-con-Spring-Boot_248.aspx">Curso Spring Boot</a></li>
+<li><a class="cmvp-footer__link-catalogo" href="https://www.campusmvp.es/catalogo/">Ver todos los cursos</a></li>
+</ul>
+<ul class="cmvp-footer__zona-1__bloque cmvp-footer__zona-1__bloque--3">
+<li><a class="cmvp-footer__link-asesor" href="https://www.campusmvp.es/asesor/">¿Te ayudamos a decidir?</a></li>
+</ul>
+</div>
+</div>
+<div class="cmvp-footer__zona-2">
+<a href="https://www.campusmvp.es/" class="cmvp-footer__logo" title="A la portada de campusMVP" rel="nofollow"><img src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/logo-campusmvp(1).svg" alt="logo campusMVP"></a>
+<ul class="cmvp-footer__zona-2__bloque-1">
+<li class="cmvp-footer-rrss-wrap"><a class="cmvp-footer-rrss cmvp-footer-rrss--twitter" href="https://twitter.com/campusmvp" target="_blank" rel="nofollow" title="Twitter">Twitter</a></li>
+<li class="cmvp-footer-rrss-wrap"><a class="cmvp-footer-rrss cmvp-footer-rrss--facebook" href="https://facebook.com/campusmvp" target="_blank" rel="nofollow" title="Facebook">Facebook</a></li>
+<li class="cmvp-footer-rrss-wrap"><a class="cmvp-footer-rrss cmvp-footer-rrss--linkedin" href="https://www.linkedin.com/company/campusmvp/" target="_blank" rel="nofollow" title="LinkedIn">LinkedIn</a></li>
+<li class="cmvp-footer-rrss-wrap"><a class="cmvp-footer-rrss cmvp-footer-rrss--youtube" href="https://www.youtube.com/@campusMVP" target="_blank" rel="nofollow" title="YouTube">YouTube</a></li>
+<li class="cmvp-footer-rrss-wrap"><a class="cmvp-footer-rrss cmvp-footer-rrss--podcast" href="https://go.campusmvp.es/podcast" target="_blank" rel="nofollow" title="Cosas de programadores, el podcast de campusMVP">Podcast</a></li>
+</ul>
+<ul class="cmvp-footer__zona-2__bloque-2">
+<li><a href="https://www.campusmvp.es/conocenos" rel="nofollow">¿Por qué campusMVP?</a></li>
+<li><a href="https://www.campusmvp.es/recursos" rel="nofollow">Recursos para programadores</a></li>
+<li><a href="https://www.campusmvp.es/descuentos/formacion-bonificada">Bonifica tu curso</a></li>
+<li><a href="https://www.campusmvp.es/empresas">Servicios para empresas</a></li>
+<li><a href="https://www.campusmvp.es/descuentos/" rel="nofollow">Descuentos</a></li>
+<li><a href="https://www.campusmvp.es/faq/">Preguntas frecuentes</a></li>
+<li><a href="https://www.campusmvp.es/contacto/" rel="nofollow">Contacto</a></li>
+</ul>
+</div>
+</div>
+<div class="cmvp-footer__zona-3">
+<div class="cmvp-footer__zona-3__links">
+<p><span class="copy">© Krasis Consulting S.L.U.</span> - <a href="https://www.krasis.com/aviso_legal" target="_blank" rel="nofollow">Aviso Legal y Política de privacidad</a> - <a href="https://www.krasis.com/politica-cookies" target="_blank" rel="nofollow">Política de Cookies</a> - <a href="https://www.campusmvp.es/recursos/post/Que-diferencias-hay-entre-display-block-inline-e-inline-block-en-CSS.aspx#" onclick="return klaro.show(null, true);">Gestionar cookies</a></p>
+</div>
+</div>
+</footer>
+
+
+<span class="scrollup"></span>
+<script src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/jquery.pan.min.js.descarga"></script>
+<script src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/jquery.YACSSTooltip.min.js.descarga"></script>
+<script src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/scripts.js.descarga"></script>
+<script src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/newsletter.js.descarga"></script>
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="C751377C">
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="Ivi20nfMP2V9R9tgBvWLFAVhX80TIcJJ2XH/kB3IeFJzRVsilG1wsG64mHu6jRg8BgtORFqdOLtKSkbUgSU6ntUYHpwb748ttLn4pirYjcSD9qGPTLbyy1sjSW9GbguZbEtObA==">
+</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var callBackFrameUrl='/recursos/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdbqv_vsrVPNz5iJHVLj4a15-W6AG51mW0EakKiepjfuzRoi0AQ2&t=637814689746327080';
+WebForm_InitCallback();//]]>
+</script>
+</form>
+
+<script>
+
+        function AddCodeClassesToPrismPlugin() {
+
+            $(".PostBody pre").each(function () {
+                //Si dentro de los posts (.PostBody) hay etiquetas <pre> que no contengan un hijo <code> se les inyecta uno que envuelva el contenido del <pre>
+                if ((!$(this).children().is('code'))) $(this).wrapInner( "<code></code>");
+            });
+
+            $("pre > code").each(function () {
+                //Se controla que si se ha añadido el atributo para resaltar líneas a la etiqueta CODE se añada a la PRE que la envuelva ya que el plugin requiere que se establezca en ella para que funcione
+                if (($(this).data('line')) && ($(this).data('line') != '') && (!$(this).parent().data('line'))) $(this).parent().attr('data-line', $(this).data('line'));
+
+                //Para que actúe el plugin de numeración de línea de prism hay que añadir la clase "line-numbers" al tag pre
+                $(this).parent().addClass('line-numbers');
+
+                //Se asegura de que las regiones de código al menos lleven la clase de lenguaje por defecto
+                if ((!$(this).is('[class*="language-"]')) && (!$(this).is('[class*="lang-"]'))) $(this).addClass('language-');
+
+                //Si el padre de <code> (PRE) no tiene la clase de lenguaje se le pone la clase por defecto
+                if ((!$(this).parent().is('[class*="language-"]')) && (!$(this).parent().is('[class*="lang-"]'))) $(this).parent().addClass('language-');
+            });
+
+        }
+
+        $(function () {
+            AddCodeClassesToPrismPlugin();
+            // llamamos y ejecutamos Prism desde aquí para asegurarnos que están aplicadas las clases necesarias en <pre> y <code>
+            $.getScript('/recursos/Custom/Themes/campusMVP/include/prism/prism.js?ver=0.0.2', function() {
+                if (Prism) {
+
+                    //Carga el path donde se encuentran las gramáticas para el autoloader
+                    Prism.plugins.autoloader.languages_path = '/recursos/Custom/Themes/campusMVP/include/prism/components/';
+
+                    //Si existe el objeto Prism cargamos su css para asegurarnos de que, si no funciona, todos los bloques de código se vean con los estilos básicos por defecto
+                    $('<link>')
+                    .appendTo('head')
+                    .attr({
+                        type: 'text/css',
+                        rel: 'stylesheet',
+                        href: '/recursos/Custom/Themes/campusMVP/include/prism/prism.css?ver=0.0.2'
+                        });
+                }
+            });
+        });
+
+    </script>
+
+
+<a id="BackToTop" class="back_to_top" href="https://www.campusmvp.es/recursos/post/Que-diferencias-hay-entre-display-block-inline-e-inline-block-en-CSS.aspx#top" title="Volver a arriba">
+<svg xmlns="http://www.w3.org/2000/svg" width="40px" height="32px" id="back-icon">
+<rect x="0" y="0" width="40px" height="32px" id="back-wrapper"></rect>
+<polyline id="arrow_top" points="10 22,20 10, 30 22" stroke="white" stroke-width="3" fill="transparent"></polyline>
+</svg>
+</a>
+
+<script src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/app.js.descarga"></script>
+
+<script type="text/plain" data-type="application/javascript" data-name="ga">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-264978-6']);
+    _gaq.push(['_gat._anonymizeIp']);
+    _gaq.push(['_setDomainName', 'campusmvp.es']);
+    _gaq.push(['_setAllowLinker', true]);
+    _gaq.push(['_addIgnoredOrganic', 'krasis']);
+    _gaq.push(['_addIgnoredOrganic', 'krasis.com']);
+    _gaq.push(['_addIgnoredOrganic', 'krasis press']);
+    _gaq.push(['_addIgnoredOrganic', 'krasispress']);
+    _gaq.push(['_addIgnoredOrganic', 'campusmvp']);
+    _gaq.push(['_addIgnoredOrganic', 'campus mvp']);
+    _gaq.push(['_addIgnoredOrganic', 'campusmvp.es']);
+    _gaq.push(['_addIgnoredOrganic', 'www.campusmvp.es']);
+    _gaq.push(['_addIgnoredOrganic', 'campus mvp.es']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+<script>
+    //Implementación dummy por defecto (la correcta se carga automáticamente si el usuario acepta)
+    zaraz = {};
+    zaraz.track = function () { };
+    zaraz.ecommerce = function () { };
+
+    //Proxy para llamar a Zaraz de manera más cómoda. Llama al real o al dummy (el que esté definido).
+    zrz = {};
+    zrz.track = function (evtName, categ, lbl, val) {
+        //Track con zaraz
+        if (evtName) {
+            var data = {};
+            if (categ) data.eventCategory = categ;
+            if (lbl) data.eventLabel = lbl;
+            if (val) data.value = val;
+            zaraz.track(evtName, data);
+        }
+    };
+</script>
+<script type="text/plain" data-src="/cdn-cgi/zaraz/i.js" referrerpolicy="origin" data-type="application/javascript" data-name="ga"></script>
+
+
+
+<script>
+    //Las tags y categorías solo se cargan previamente si estamos en un post
+    var cTags = null, cCategs = null;
+    if (typeof currentTags !== 'undefined') cTags = currentTags;
+    if (typeof currentCategs !== 'undefined') cCategs = currentCategs;
+    //Cargar anuncio aleatorio para el lateral
+    var adEngineLateral = new AdEngine('/recursos/publi/lateral.json?v=1.0.90', cTags, cCategs, function(){
+        adEngineLateral.insertAdsByClassName('banner-lateral');
+    });
+</script>
+<script src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/figlet.js.descarga"></script>
+
+<link rel="stylesheet" href="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/klaro.min.css">
+<link rel="stylesheet" href="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/klaro-extras.css">
+<script defer="" type="application/javascript" src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/config.js.descarga"></script>
+<script defer="" type="application/javascript" src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/klaro.js.descarga"></script>
+
+<script defer="" src="./¿Qué diferencias hay entre display_block, inline e inline-block en CSS_ _ campusMVP.es_files/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon="{&quot;rayId&quot;:&quot;7c1db9e51ef10314&quot;,&quot;version&quot;:&quot;2023.4.0&quot;,&quot;r&quot;:1,&quot;token&quot;:&quot;f0aa520dc035432cb9fe5438c4f03b8b&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>
+
+
+</body></html>
